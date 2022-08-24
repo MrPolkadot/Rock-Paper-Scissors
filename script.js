@@ -23,5 +23,18 @@ function playRound(playerSelection, computerSelection) {
         console.log("You lose! Paper beats Rock");
     } else if ((RegExp(/playerSelection/i) === choices[0]) && (computerSelection === choices[2])) {
         console.log("You win! Rock beats Scissors");
-    } else if ((RegExp(/playerSelection/i) === choices[0]) && (computerSelection === choices[2])) {}
+    } else if ((RegExp(/playerSelection/i) === choices[1]) && (computerSelection === choices[0])) {
+        console.log("You win! Paper beats rock");
+    } else if ((RegExp(/playerSelection/i) === choices[1]) && (computerSelection === choices[1])) {
+        console.log("It's a tie! Paper equals Paper");
+    } else if ((RegExp(/playerSelection/i) === choices[1]) && (computerSelection === choices[2])) {
+        console.log("You lose! Scissors beats Paper");
+    } else if ((RegExp(/playerSelection/i) === choices[2]) && (computerSelection === choices[0])) {
+        console.log("You lose! Rock beats Scissors");
+    } else if ((RegExp(/playerSelection/i) === choices[2]) && (computerSelection === choices[1])) {
+        console.log("You win! Scissors beats Paper");
+    } else if ((RegExp(/playerSelection/i) === choices[2]) && (computerSelection === choices[2])) {
+        console.log("It's a tie! Scissors equals Scissors");
+    } 
 }
+
