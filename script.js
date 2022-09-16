@@ -1,3 +1,13 @@
+let rockBtn = document.querySelector("#rock");
+let paperBtn = document.querySelector("#paper");
+let scissorsBtn = document.querySelector("#scissors");
+
+rockBtn.addEventListener('click', playRound);
+paperBtn.addEventListener('click', playRound);
+scissorsBtn.addEventListener('click', playRound);
+
+
+
 //ROCK-PAPER-SCISSORS//
 
 //Create array of choices
@@ -48,14 +58,15 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-/*Test results
-let playerSelection = prompt('rock, paper, scissors!');
+//Test results
+let playerSelection = [rockBtn, paperBtn, scissorsBtn];
+
 let computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
-*/
+
 
 //Create function to play several rounds
-function game() {
+/*function game() {
     for (let i = 0; i < 5; i++) {
         let playerSelection = prompt('rock, paper, scissors!');
         let computerSelection = getComputerChoice();
@@ -65,5 +76,7 @@ function game() {
     }
     alert("Game Over");
 };
+*/
 
-game();
+//game();
+
